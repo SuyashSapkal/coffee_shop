@@ -9,16 +9,11 @@ AUTH0_DOMAIN = 'trialproject.us.auth0.com'
 ALGORITHMS = ['RS256']
 API_AUDIENCE = 'coffee_shop'
 
-# AuthError Exception
-
 
 class AuthError(Exception):
     def __init__(self, error, status_code):
         self.error = error
         self.status_code = status_code
-
-
-# Auth Header
 
 
 def get_token_auth_header():
